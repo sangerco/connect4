@@ -1,0 +1,74 @@
+/* game board table */
+
+body {
+  background: darkgreen;
+}
+
+@font-face { font-family: BungeeSpice; src: url('Fonts/BungeeSpice-Regular.ttf'); }
+
+h1 {
+  color: antiquewhite;
+  text-align: center;
+  font-size: 3em;
+  font-family: BungeeSpice, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, serif;
+}
+
+#game {
+  width: 375px;
+  height: 407px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 2x antiquewhite;
+  background-color: blue;
+}
+
+#board {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 2px antiquewhite;
+  background-color: blue;
+}
+
+/* #board td div {
+  margin: 4px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: antiquewhite;
+} */
+
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* TODO: make into circles */
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+
+.piece.player1 {
+  background-color: red;
+}
+
+.piece.player2 {
+  background-color: yellow;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: rgb(161, 137, 0);
+}
